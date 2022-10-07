@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/main/main.css">
+    <link rel="stylesheet" href="/scss/button/button.css">
+    <link rel="stylesheet" href="/scss/records/records.css">
+    <link rel="stylesheet" href="/scss/modal/modal.css">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de clientes</h1>
+    </header>
+    <main>
+        <section class="container">
+            <button class="btn-cadastrar" id="cadastrarCliente">Cadastrar Cliente</button>
+
+            <table class="table" id="table_client">
+                <thead class="table-head">
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </thead>
+                <tbody class="table-body"></tbody>
+            </table>
+        </section>
+        
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form" id="form">
+                    <input type="text" id="nome" class="modal-field" data-index="new" placeholder="Nome do Cliente" required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente" required>
+                    <input type="text" id="celular" class="modal-field" placeholder="Celular do Cliente" required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>
+                </form>
+                <footer class="modal-footer">
+                    <button class="btn-editarSalvar" id="salvar">Salvar</button>
+                    <button class="btn-excluirCancelar" id="cancelar">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src="/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.btn-cadastrar {
+  background-color: rgb(0, 89, 253);
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+  padding-block: 10px;
+}
+.btn-cadastrar:hover {
+  background-color: rgb(31, 0, 172);
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+  padding-block: 10px;
+}
+
+.btn-editarSalvar {
+  background-color: green;
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+}
+.btn-editarSalvar:hover {
+  background-color: rgb(0, 255, 157);
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-excluirCancelar {
+  background-color: red;
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+}
+.btn-excluirCancelar:hover {
+  background-color: rgb(151, 2, 2);
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=button.css.map */

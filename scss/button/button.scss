@@ -1,0 +1,26 @@
+@use '../shared/variaveis';
+@use '../shared/mixins';
+
+.btn-cadastrar {
+    @include mixins.btn(variaveis.$third-color);
+    padding-block: 10px;
+
+    &:hover {
+        @include mixins.btn(rgb(31, 0, 172));
+        padding-block: 10px;
+    }
+}
+.btn-editarSalvar {
+    @include mixins.btn(variaveis.$second-color);
+    
+    &:hover {
+        @include mixins.btn(rgb(0, 255, 157))
+    }
+}
+.btn-excluirCancelar {
+    @include mixins.btn(variaveis.$fourth-color); 
+    
+    &:hover {
+        @include mixins.btn(rgb(151, 2, 2))
+    }
+}
